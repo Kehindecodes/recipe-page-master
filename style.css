@@ -1,0 +1,288 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1rem;
+	color: #4f4f4f;
+	font-family: 'Montserrat', sans-serif;
+}
+/* uitilies */
+h1 {
+	font-family: 'Playfair Display', serif;
+	color: #000;
+	font-weight: 700;
+	font-size: 3rem;
+}
+h2 {
+	font-family: 'Playfair Display', serif;
+	color: #333;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+h3 {
+	font-family: 'Playfair Display', serif;
+	color: #333;
+	font-weight: 400;
+	font-size: 1.125rem;
+	font-style: italic;
+}
+.container {
+	max-width: 1920px;
+	padding: 2rem 5rem;
+}
+header div {
+	display: flex;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+header p {
+	font-size: 0.875rem;
+	font-style: italic;
+	font-weight: 500;
+	margin-left: 0.5rem;
+}
+.hero {
+	margin-bottom: 2.4rem;
+}
+.hero img {
+	width: 100%;
+	height: 470px;
+	border-radius: 12px;
+}
+.ingredients {
+	display: flex;
+}
+
+.ingredients h2 {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.ingredients h3 {
+	margin-bottom: 2rem;
+}
+
+.ingredients span {
+	font-weight: 700;
+}
+.cheesecake h3 {
+	margin-top: 2rem;
+}
+.graham,
+.cheesecake {
+	width: 858px;
+	margin-right: 6.875rem;
+}
+.item,
+.step {
+	display: block;
+	margin-bottom: 15px;
+}
+.item input,
+.step input {
+	padding: 0;
+	height: initial;
+	width: initial;
+	margin-bottom: 0;
+	display: none;
+	cursor: pointer;
+}
+.item label,
+.step label {
+	position: relative;
+	cursor: pointer;
+}
+.item label:before,
+.step label:before {
+	content: '';
+	-webkit-appearance: none;
+	background-color: transparent;
+	border: 1px solid #828282;
+	border-radius: 4px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-right: 1rem;
+	width: 21px;
+	height: 21px;
+}
+.item input:checked + label:after,
+.step input:checked + label:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 9px;
+	width: 6px;
+	height: 10px;
+	border: 1px solid #f2994a;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+.card_details {
+	width: 216px;
+	height: 367px;
+	border-radius: 20px;
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+}
+
+.card_details .info {
+	margin: 2rem auto;
+}
+.card_details .info-item {
+	display: flex;
+	margin: 1.3rem auto;
+}
+.card_details .info-item img {
+	width: 27.09px;
+	height: 25.14px;
+}
+.card_details .info .first-item img {
+	filter: invert(84%) sepia(62%) saturate(7405%) hue-rotate(324deg)
+		brightness(98%) contrast(97%);
+}
+
+.card_details .info-item .info-detail {
+	margin-left: 0.5rem;
+	margin-top: 0.5rem;
+}
+.card_details .info-item .info-detail p {
+	font-size: 0.875rem;
+	color: #333;
+	font-weight: 500;
+}
+.card_details .info .first-item p:nth-child(2) {
+	color: #f2994a;
+}
+.card_details .info-item .info-detail p:first-child {
+	color: #bdbdbd;
+	font-size: 0.625rem;
+	font-weight: 700;
+}
+
+.instructions {
+	margin: 2rem auto;
+}
+.instructions h2 {
+	margin-bottom: 2rem;
+}
+.instructions .num {
+	background-color: #f2994a;
+	color: #fff;
+	width: 36px;
+	height: 36px;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.5rem;
+	text-align: center;
+	border-radius: 6px;
+	margin-right: 1.5rem;
+}
+.instructions .instruction {
+	display: flex;
+	margin: 1rem 0;
+}
+.instructions .instruction p {
+	width: 528px;
+	line-height: 24px;
+}
+.instructions .instruction p span {
+	font-weight: 700;
+}
+
+.link a {
+	color: #bdbdbd;
+	text-decoration: none;
+}
+.link a:hover {
+	text-decoration: underline;
+}
+footer {
+	text-align: center;
+	margin-top: 5rem;
+}
+footer a {
+	font-weight: 700;
+	color: #333;
+}
+
+@media (min-width: 360px) and (max-width: 830px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-size: 1.125rem;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+	.container {
+		max-width: 1920px;
+		padding: 2rem 1rem;
+	}
+	header p {
+		font-size: 0.75rem;
+	}
+	.hero {
+		margin-bottom: 1rem;
+	}
+	.hero img {
+		height: auto;
+	}
+	.ingredients {
+		display: flex;
+		flex-direction: column;
+	}
+	.wrapper {
+		order: 2;
+	}
+	.card_details {
+		width: 100%;
+		height: auto;
+		border-radius: 0;
+		box-shadow: none;
+		padding: 0;
+		order: 1;
+	}
+	.card_details .info {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: 0 auto;
+	}
+	.griditem {
+		grid-column: 1/4;
+	}
+	.card_details .info-item .info-detail p {
+		font-size: 0.625rem;
+	}
+	.card_details .info-item .info-detail p:first-child {
+		font-size: 0.5rem;
+	}
+	.card_details .info-item {
+		margin: 1rem auto;
+	}
+	.item label,
+	.step label {
+		font-size: 0.875rem;
+	}
+	.graham,
+	.cheesecake {
+		width: 100%;
+		margin-right: 0;
+	}
+	.instructions .instruction p {
+		width: 100%;
+		line-height: 19px;
+	}
+	.link a {
+		width: 100%;
+		font-size: 12px;
+	}
+	footer {
+		font-size: 14px;
+	}
+}
